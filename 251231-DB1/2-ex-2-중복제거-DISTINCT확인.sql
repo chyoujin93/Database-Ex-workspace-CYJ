@@ -10,7 +10,6 @@ SELECT DISTINCT JOB, DEPTNO FROM EMP;
 SELECT JOB, DEPTNO FROM EMP;
 
 
-
 --실습2-1. 직무목록 중복없이 출력(직무)
 --정답: 직무 5개 출력됨
 SELECT DISTINCT JOB FROM EMP;
@@ -32,3 +31,4 @@ SELECT DISTINCT SAL FROM EMP;
 
 --실습2-7. EMP 테이블에서 직무, 부서번호, 급여 조합이 고유한 행만 조회하시오.
 SELECT DISTINCT JOB, DEPTNO, SAL FROM EMP;
+
