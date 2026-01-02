@@ -11,7 +11,10 @@ WHERE LENGTH(ENAME) >= 5;
 -- 힌트) INSTR(JOB, 'S')
 SELECT JOB FROM EMP
 WHERE INSTR(JOB, 'S') > 0;
---> JOB만 출력
+--> JOB만 출력 '>0'을 안쓰면, S문자가 없는 행도 '0'으로 같이 출력됨.
+-- WHERE INSTR(ENAME, 'A') != 0 (NOT=0)
+-- WHERE JOB LIKE '%S%'; 
+--> 가독성과 시험 기준에서는 >0, LIKE 연산자가 가장 많이 쓰임.
 
 SELECT JOB, INSTR(JOB, 'S') 
 AS S_POSITION FROM EMP
