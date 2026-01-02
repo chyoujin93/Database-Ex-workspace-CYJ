@@ -10,5 +10,6 @@ SELECT ENAME, SAL, DEPTNO FROM EMP;
 SELECT ENAME, SAL, DEPTNO, comm FROM EMP
 WHERE DEPTNO = 20;
 
---예약어는 대문자 권장, 소문자도 인식은 됨. 단, 따옴표 쓸 경우, 대소문자 가림.
+--예약어는 대문자 권장, 소문자도 인식은 됨. 
+--단, 따옴표 쓸 경우, 대소문자 가림.
 

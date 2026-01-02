@@ -7,12 +7,14 @@ WHERE JOB = 'CLERK' AND (SAL BETWEEN 1000 AND 1500);
 SELECT ENAME, JOB FROM EMP 
 WHERE ENAME LIKE '%AM%';
 
--- 3)**부서번호가 10번인 사원 중, 직무가 'MANAGER'가 아닌 사원을 출력하시오.
--- 단, MGR이 NULL인 사람도 포함하시오.** -- 힌트)mgr IS NULL
+-- 3)**부서번호가 10번인 사원 중, 
+-- 직무가 'MANAGER'가 아닌 사원을 출력하시오.
+-- 단, MGR이 NULL인 사람도 포함하시오.** 
+-- 힌트)mgr IS NULL
 -- → OR사용해야 둘 중 하나만 만족해도 출력되며(둘 다 출력), 
 -- AND를 쓰면 둘 다 만족해야 출력됨.
 SELECT * FROM EMP 
-WHERE DEPTNO = 10 
-AND 
-(JOB != 'MANAGER'OR MGR IS NULL);
+WHERE DEPTNO = 10  -->부서번호가 10번인 사원
+AND -->중에서
+(JOB != 'MANAGER'OR MGR IS NULL); -->직무가 매니저 또는 직속상사가 없는사람.
 

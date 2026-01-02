@@ -21,4 +21,4 @@ WHERE INSTR(JOB, 'S') > 0;
 SELECT JOB, 
 INSTR(JOB, 'S') 
 AS S_POS FROM EMP;
---> 모든 행을 출력함.
+--> 모든 행을 출력함.(문제에 대한 정답은X)
